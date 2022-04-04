@@ -13,7 +13,7 @@ function Card(props) {
     };
     return (
         <div className="card mb-4 box-shadow">
-            {props.src && (<img className="card-img-top" src={props.src} alt={props.alt} />)}
+            <img className="card-img-top" src={props.src ? props.src : 'placeholder_image.jpg'} alt={props.alt} />
             <div className="card-body">
                 <h5>{props.title}</h5>
                 <p className="card-text">{props.details}</p>
