@@ -15,7 +15,6 @@ function Home() {
             const proximo = await api.get('lancamentos/proximo');
             const ultimo = await api.get('lancamentos/ultimo');
             setAllValues({proximo: proximo.data, ultimo: ultimo.data});
-            console.log(proximo.data);
         }
         fetchData();
     }, []);

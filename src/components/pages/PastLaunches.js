@@ -9,7 +9,6 @@ function PastLaunches() {
         async function fetchData() {
             const ultimos = await api.get("lancamentos/passados");
             setUltimosLancamentos(ultimos.data);
-            console.log(ultimos.data);
         }
         fetchData();
     }, []);
