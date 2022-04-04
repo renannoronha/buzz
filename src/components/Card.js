@@ -26,7 +26,6 @@ class Card extends Component {
             second: "numeric",
             timeZoneName: "short",
         };
-        console.log(this.state?.variant);
         return (
             <div className="card mb-4 box-shadow">
                 {this.state?.variant ? (
